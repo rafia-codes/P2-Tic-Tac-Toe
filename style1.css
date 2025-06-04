@@ -1,0 +1,67 @@
+nav{
+    width: 100vw;
+    background-color: rgb(151, 41, 41);
+    color: white;
+    height: 5vh;
+    font-size: xx-large;
+    padding: 12px 15px;
+    margin-bottom: 25px;
+}
+.container{
+    display: flex;
+    margin-left: 400px;
+    gap: 200px;
+}
+button{
+    background-color: brown;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+}
+h2{
+    color: rgb(70, 3, 3);
+    text-align: center;
+    min-height: 1rem;
+}
+.board{
+    position: relative;
+    padding: 25px 0px;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+}
+.cell{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+.cell:hover{
+    background-color: rgb(237, 180, 180);
+}
+.bl-0{
+    border-left:0;
+}
+.br-0{
+    border-right: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.line{
+     position: absolute;
+    width: 300px;          
+    height: 4px;           
+    background-color: brown;
+    top: 50%;                         
+    transform: translate(-50%, -50%) scaleX(0); 
+    transform-origin: center;
+}
